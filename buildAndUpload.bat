@@ -27,10 +27,8 @@ IF "%NETLIFY_AUTH_TOKEN%"=="" (
     SET /P NETLIFY_AUTH_TOKEN=Provide NETLIFY_AUTH_TOKEN:    
 )
 
-IF "%NETLIFY_SITE_ID%" == "" (
-    ECHO NETLIFY_SITE_ID is NOT defined please Specify
-    SET /P NETLIFY_SITE_ID=Provide NETLIFY_SITE_ID:    
-)
+:: Always ask for the site ID
+SET /P NETLIFY_SITE_ID=Provide NETLIFY_SITE_ID:    
 
 call netlify deploy --prod --auth %NETLIFY_AUTH_TOKEN% --dir build --site %NETLIFY_SITE_ID%
 
