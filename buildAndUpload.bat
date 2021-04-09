@@ -1,12 +1,38 @@
 @ECHO OFF
-SET /P yesno=Build and then Upload to goose-frontend-amm? [y/n]:
-IF "%yesno%"=="y" GOTO Confirm
-IF "%yesno%"=="Y" GOTO Confirm
+REM Deploy script install's the dependenies, builds the project and deploys to netlify.
+REM Ensure you have set the NETLIFY_SITE_ID and NETLIFY_AUTH_TOKEN in your environment variable. 
+
+SET /P yesno=Install and Build ? [y/n]:
+SET /P yesnodeployprod=Do you want to deploy and publish? [y/n]:
+
+if "%yesno%"=="y" GOTO Build
+if "%yesno%"=="Y" GOTO Build
+
+
+:Deploy
+IF "%yesnodeployprod%"=="y" GOTO DeployProd
+IF "%yesnodeployprod%"=="Y" GOTO DeployProd
+
+
 GOTO End
 
-:Confirm
-call npm run build
-call "C:\Program Files\Amazon\AWSCLI\bin\aws" s3 sync "./build" s3://goose-frontend-amm/ --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --exclude "*.bat" --delete --profile gooseFinance
+:Build
+call yarn install
+call yarn build
+GOTO Deploy
 
-:END
-SET /P whatever = press any button to exit...
+:DeployProd
+IF "%NETLIFY_AUTH_TOKEN%"=="" (
+    ECHO NETLIFY_AUTH_TOKEN is NOT defined please Specify
+    SET /P NETLIFY_AUTH_TOKEN=Provide NETLIFY_AUTH_TOKEN:    
+)
+
+IF "%NETLIFY_SITE_ID%" == "" (
+    ECHO NETLIFY_SITE_ID is NOT defined please Specify
+    SET /P NETLIFY_SITE_ID=Provide NETLIFY_SITE_ID:    
+)
+
+call netlify deploy --prod --auth %NETLIFY_AUTH_TOKEN% --dir build --site %NETLIFY_SITE_ID%
+
+
+:End

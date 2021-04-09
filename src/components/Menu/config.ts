@@ -21,7 +21,7 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Recipes',
+    label: 'Recipes (MIST)',
     icon: 'RecipeIcon',
     href: 'https://www.alchemistdefi.com/farms',
   },
@@ -31,56 +31,25 @@ const config: MenuEntry[] = [
     href: 'https://www.alchemistdefi.com/nests',
   },
   {
-    label: 'Transmutation',
+    label: 'Transmutation(AURUM)',
     icon: 'PoolIcon',
     href: 'https://www.aurum.alchemistdefi.com/vessels',
   },
   {
-    label: 'MIST Referrals',
-    icon: 'GroupsIcon',
-    href: 'https://www.alchemistdefi.com/referrals',
-  },
-  {
     label: 'MIST Price Chart',
     icon: 'ChartIcon',
-    href: 'https://poocoin.app/tokens/0x6f8fe12cc34398d15b7d5a5ba933e550da1d099f',
+    href: 'https://unidexbeta.app/bscCharting?token=0x6f8FE12CC34398d15b7D5A5BA933E550DA1D099f',
   },
   {
-    label: 'Doc',
+    label: 'Aurum Price Chart',
+    icon: 'ChartIcon',
+    href: 'https://unidexbeta.app/bscCharting?token=0x6f8FE12CC34398d15b7D5A5BA933E550DA1D099f',
+  },
+  {
+    label: 'Project Documentation',
     icon: 'DocIcon',
     href: 'https://alchemist-defi.gitbook.io/alchemist-defi/',
-  },
-  {
-    label: 'MIST Contract',
-    icon: 'ContractIcon',
-    href: 'https://bscscan.com/address/0x6f8fe12cc34398d15b7d5a5ba933e550da1d099f',
-  },
-  {
-    label: 'Burning Mist',
-    icon: 'FireIcon',
-    href: 'https://alchemist-defi.gitbook.io/alchemist-defi/automated-burning-mechanism',
-  },
-  {
-    label: 'Alchemist\'s Genie',
-    icon: 'GenieIcon',
-    href: 'https://alchemistdefi.medium.com',
-  },
-
-  // {
-  //   label: 'Pools',
-  //   icon: 'PoolIcon',
-  //   href: '/pools',
-  // },
-  // {
-  //   label: 'Lottery',
-  //   icon: 'TicketIcon',
-  //   href: '/lottery',
-  // },
-  // {
-  //   label: 'NFT',
-  //   icon: 'NftIcon',
-  //   href: '/nft',
-  // },
+  },  
   {
     label: 'More',
     icon: 'MoreIcon',
@@ -90,11 +59,7 @@ const config: MenuEntry[] = [
         href: 'https://github.com/achemistdefi/',
       },
       {
-        label: 'Docs',
-        href: 'https://alchemist-defi.gitbook.io/alchemist-defi/',
-      },
-      {
-        label: 'Blog',
+        label: 'Medium Blog',
         href: 'https://alchemistdefi.medium.com',
       },
     ],
