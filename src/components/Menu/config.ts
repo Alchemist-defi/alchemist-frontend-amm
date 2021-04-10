@@ -21,7 +21,7 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Recipes (MIST)',
+    label: 'MIST Recipes',
     icon: 'RecipeIcon',
     href: 'https://www.alchemistdefi.com/farms',
   },
@@ -31,7 +31,7 @@ const config: MenuEntry[] = [
     href: 'https://www.alchemistdefi.com/nests',
   },
   {
-    label: 'Transmutation(AURUM)',
+    label: 'AURUM Alchemy',
     icon: 'PoolIcon',
     href: 'https://www.aurum.alchemistdefi.com/vessels',
   },
@@ -56,7 +56,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/achemistdefi/',
+        href: 'https://github.com/Alchemist-defi/',
       },
       {
         label: 'Medium Blog',
