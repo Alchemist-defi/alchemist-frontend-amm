@@ -59,7 +59,7 @@ const config: MenuEntry[] = [
   {
     label: 'TechRate Audit',
     icon: 'AuditIcon',
-    href: 'https://alchemist-defi.com/TechrateAudit11042021.pdf',
+    href: 'https://alchemist-defi.com/files/TechrateAudit11042021.pdf',
   },  
   {
     label: 'More',
