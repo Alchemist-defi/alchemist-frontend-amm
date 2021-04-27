@@ -657,7 +657,7 @@
       "decimals": 18
     },
     {
-      "name": "Knight",
+      "name": "Knight Token",
       "symbol": "KNIGHT",
       "address": "0x16c0e0936e1b38ff1f9b8a1e75d8ba29adf87d30",
       "chainId": 56,
@@ -669,6 +669,27 @@
       "address": "0xab329b1b7785be9f954bacfc7fa663ce9b36338d",
       "chainId": 56,
       "decimals": 9
+    },
+    {
+      "name": "Legend Token",
+      "symbol": "LEGEND",
+      "address": "0xDc661984735b535210CB1f52f86cc58616024192",
+      "chainId": 56,
+      "decimals": 18
+    },
+    {
+      "name": "Squire Token",
+      "symbol": "SQUIRE",
+      "address": "0x2F0D21f1B84F03fB9D60004fc206C86Be6902a32",
+      "chainId": 56,
+      "decimals": 18
+    },
+    {
+      "name": "Knights of the Round Table Token",
+      "symbol": "TABLE",
+      "address": "0xf5a2F7418035ce76967F515f39d65719bB0453B6",
+      "chainId": 56,
+      "decimals": 18
     }
   ]
 }
