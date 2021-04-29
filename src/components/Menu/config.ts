@@ -62,23 +62,37 @@ const config: MenuEntry[] = [
     href: 'https://www.alchemistdefi.com/files/TechrateAudit11042021.pdf',
   },  
   {
-    label: 'More',
+    label: 'Partnerships',
+    icon: 'HandshakeIcon',
+    items: [
+      {
+        label: 'Knights Defi',
+        href: 'https://www.knightsdefi.com/',
+      },
+      {
+        label: 'BSCDog',
+        href: 'https://bscdog.com/',
+      }
+    ],
+  },{
+    label: 'Project Documentation',
+    icon: 'RoadmapIcon',
+    href: 'https://docs.alchemistdefi.com/',
+  }, 
+  {
+    label: 'More Info',
     icon: 'MoreIcon',
     items: [
       {
-        label: 'Github',
+        label: 'Official Github',
         href: 'https://github.com/Alchemist-defi/',
       },
       {
         label: 'Medium Blog',
         href: 'https://alchemistdefi.medium.com',
-      },
-      {
-        label: 'Project Documentation',
-        href: 'https://alchemist-defi.gitbook.io/alchemist-defi/',
-      },      
+      }
     ],
-  },  
+  }
 ]
 
 export default config
