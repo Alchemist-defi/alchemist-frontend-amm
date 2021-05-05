@@ -57,7 +57,7 @@ const config: MenuEntry[] = [
       {
         label: 'Aurum Price Chart',
         href: 'https://charts.bogged.finance/?token=0x49207BAA3a7332F0716788aa57B088D499bcc104',
-      },    
+      }    
     ],
   },
   {
