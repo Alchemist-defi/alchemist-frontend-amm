@@ -34,7 +34,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'MIST Price Chart',
-        href: 'https://unidexbeta.app/bscCharting?token=0x6f8FE12CC34398d15b7D5A5BA933E550DA1D099f',
+        href: 'https://charts.bogged.finance/?token=0x6f8fe12cc34398d15b7d5a5ba933e550da1d099f',
       },    
     ],
   },
@@ -51,8 +51,12 @@ const config: MenuEntry[] = [
         href: 'https://www.aurum.alchemistdefi.com/vessels',
       },
       {
+        label: 'Aurum Spells',
+        href: 'https://www.aurum.alchemistdefi.com/spells',
+      },
+      {
         label: 'Aurum Price Chart',
-        href: 'https://unidexbeta.app/bscCharting?token=0x49207BAA3a7332F0716788aa57B088D499bcc104',
+        href: 'https://charts.bogged.finance/?token=0x49207BAA3a7332F0716788aa57B088D499bcc104',
       },    
     ],
   },
