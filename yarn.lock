@@ -2033,7 +2033,7 @@
 
 "@pancakeswap-libs/uikit@Alchemist-defi/alchemistuikit":
   version "0.10.2"
-  resolved "https://codeload.github.com/Alchemist-defi/alchemistuikit/tar.gz/ac951ac070e52ef31eceece586b52212b61451ea"
+  resolved "https://codeload.github.com/Alchemist-defi/alchemistuikit/tar.gz/2d7290a999fdf57ace5c69fbd0dfeab44b09de89"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
