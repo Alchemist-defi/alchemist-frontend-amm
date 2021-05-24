@@ -63,7 +63,7 @@ const config: MenuEntry[] = [
   {
     label: 'MIST Referral',
     icon: 'MoonIcon',
-    href: 'https://alchemist.com/referrals',
+    href: 'https://www.alchemistdefi.com/referrals',
   },
   {
     label: 'TechRate Audit',
